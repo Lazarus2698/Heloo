@@ -28,7 +28,7 @@ function  [assignments, centers] = kmeans(X, k, centers = 0, maxiter = 200)
 			clusterSizes(assignTo)++;
 		endfor
 
-		% This process is called 'singleton' in terms of Matlab. 
+		% This process is called 'singleton' in terms of Matlab/Octave 
 		% If a cluster is empty choose a random data point as new 
 		% cluster cener.
 		for clusterIx = 1:k
